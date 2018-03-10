@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ViewPager vp = findViewById(R.id.viewPager);
-        vp.setCurrentItem(3,true);//set to the last element
+
+        PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
+        vp.setAdapter(adapter);
+
+//        vp.setCurrentItem(3,true);//set to the last element
 
 
     }
@@ -28,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return null;
+            return SlideShowFragment.newInstance(position);
         }
 
         @Override
         public int getCount() {
-            return 0;//total number
+            return 3;//total number
         }
     }
 }

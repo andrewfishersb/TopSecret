@@ -1,6 +1,116 @@
 <resources>
     <string name="app_name">TopSecret</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slide_1_tinder">Once upon a time there was a guy named Andrew who was browsing Tinder…</string>
+    <string name="slide_2_tinder">he saw the most beautiful girl on Tinder and immediately swiped right.</string>
+    <string name="slide_3_opening_line">The girl Jenna thought Andrews opening line was just going to be another dick joke, but instead it was the start of something beautiful…</string>
+    <string name="slide_4_moore_mesa">On December 21st 2014 they decided to meet in person and take a walk to Moore Mesa, they bonded over their crazy families while watching the sunset.</string>
+    <string name="slide_5_christmas_break">They both left town during Christmas break but would constantly text and share photos</string>
+    <string name="slide_6_jan_3rd">On January 3rd 2015, they took a moonlit walk along the beach, where they kissed for the first time. Although the beach was cold they stayed out until 4 am.</string>
+    <string name="slide_7_gone_girl">For their first public date they went to see Gone Girl… big mistake.</string>
+    <string name="slide_8_smitten">Soon after they became smitten and tried to spend as much time together as possible and partook in activities such as… </string>
+    <string name="slide_9_activities">Bowling, TBD, TBD and… </string>
+    <string name="slide_10_grand_budapest">Watching The Grand Budapest Hotel. ;) </string>
+
+
+
+
+
+
+
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+    <!--<string name="slide"></string>-->
+
+
 </resources>
