@@ -97,9 +97,8 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.care_taker;
                 break;
             case 14:
-                //todo night kiss
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_15_wake_up;
+                imageResource = R.drawable.night_kiss;
                 break;
             case 15:
                 //todo book of mormon
