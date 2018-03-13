@@ -97,42 +97,50 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.care_taker;
                 break;
             case 14:
+                //todo night kiss
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
             case 15:
+                //todo book of mormon
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
-            case 16:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+            case 16: //todo super skeewed
+                textResource = R.string.slide_17_graduation;
+                imageResource = R.drawable.jenna_grad;
                 break;
             case 17:
+                //todo love you
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
             case 18:
+                //todo sb collage
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
             case 19:
+                //todo DC
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
             case 20:
+                //todo NYC
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
             case 21:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_22_portland_move;
+                imageResource = R.drawable.apartment;
                 break;
             case 22:
+                //todo jenna gets a job downtown
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
             case 23:
+                //todo start of portland collages...maybe a nature  one, a vibe one, a food one (steal online images) and of course Blazers
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
