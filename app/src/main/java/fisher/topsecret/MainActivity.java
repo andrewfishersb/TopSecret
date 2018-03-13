@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;//total number
+            return 51;//total number
         }
     }
 }

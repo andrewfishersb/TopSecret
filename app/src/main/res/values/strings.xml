@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TopSecret</string>
-
+<string name="filler">Filler Text</string>
     <string name="slide_1_tinder">Once upon a time there was a guy named Andrew who was browsing Tinder…</string>
     <string name="slide_2_tinder">he saw the most beautiful girl on Tinder and immediately swiped right.</string>
     <string name="slide_3_opening_line">The girl Jenna thought Andrews opening line was just going to be another dick joke, but instead it was the start of something beautiful…</string>
@@ -12,9 +12,8 @@
     <string name="slide_9_activities">Bowling, TBD, TBD and… </string>
 
     <string name="slide_10_grand_budapest">Watching The Grand Budapest Hotel. ;) </string>
-    <string name="slide_11_pre_ankle">Things were going swimmingly until Andrew foolishly blocked a soccer ball wrong, thus altering the next 6 weeks of their lives.</string>
-    <string name="slide_12_stupid_andrew">Andrew stupidly took off his boot, hobbled to the bus and then walked home, as he thought it was only sprained</string>
-    <string name="slide_13_broken_ankle">The next day they found out he had broken his ankle and would need surgery.</string>
+    <string name="slide_11_pre_ankle">Things were going swimmingly until Andrew…</string>
+    <string name="slide_13_broken_ankle">broke his ankle and would needed surgery.</string>
     <string name="slide_14_through_sickness">Instead of saying "peace out" Jenna decided to be an amazing girlfriend and stick by Andrew’s side. She would come over as soon as work and school were done to help nurse him back to health.</string>
     <string name="slide_15_wake_up">She slept over every night, and the best part was in the middle of the night Andrew would wake her up for a quick kiss before letting her drift back to sleep.</string>
     <string name="slide_16_mormon_and_meet">Life was easier once Andrew transitioned to a scooter and crutches, they even were able to see book of Mormon, but meeting her family was a struggle with Zeus and the tri level house</string>
