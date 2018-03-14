@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -35,6 +36,7 @@ public class SlideShowFragment extends Fragment {
         int layoutResource;
         int textResource;
         int imageResource;
+        boolean tooSkewed = false;
         switch (id) {
             //todo make an intro page says something like swipe right to start
             case 0:
@@ -48,9 +50,10 @@ public class SlideShowFragment extends Fragment {
             case 2:
                 textResource = R.string.slide_2_tinder;
                 imageResource = R.drawable.jenna_profile; //todo sizing off
+                tooSkewed = true;
                 break;
             case 3:
-                textResource = R.string.slide_3_opening_line;
+                textResource = R.string.slide_3_opening_line; //todo shorten and may tooSkewed = true;
                 imageResource = R.drawable.tinder;
                 break;
             case 4:
@@ -58,9 +61,9 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.moore_mesa;
                         break;
             case 5:
-//                //todo christmas break collage
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                tooSkewed = true;
+                textResource = R.string.slide_5_christmas_break;
+                imageResource = R.drawable.christmas;
                 break;
             case 6:
                 textResource = R.string.slide_6_jan_3rd;
@@ -76,9 +79,9 @@ public class SlideShowFragment extends Fragment {
             imageResource = R.drawable.placeholder;
                 break;
             case 9:
-//            todo activities
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_9_activities; //todo move pictures around as beach picure is blocked
+                imageResource = R.drawable.activities;
+                tooSkewed = true;
                 break;
             case 10:
                 textResource = R.string.slide_10_grand_budapest;
@@ -97,17 +100,19 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.care_taker;
                 break;
             case 14:
-                textResource = R.string.slide_15_wake_up;
+                textResource = R.string.slide_15_wake_up;//todo a little skewed
                 imageResource = R.drawable.night_kiss;
+                tooSkewed = true;
                 break;
             case 15:
-                //todo book of mormon
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_16_mormon_and_meet; //todo super skewed
+                imageResource = R.drawable.injured;
+                tooSkewed = true;
                 break;
             case 16: //todo super skeewed
                 textResource = R.string.slide_17_graduation;
-                imageResource = R.drawable.jenna_grad;
+                imageResource = R.drawable.jenna_grad_old;
+                tooSkewed = true;
                 break;
             case 17:
                 //todo love you
@@ -115,19 +120,21 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.placeholder;
                 break;
             case 18:
-                //todo sb collage
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_19_sb_life;
+                imageResource = R.drawable.sb_collage;
+                tooSkewed = true;
                 break;
             case 19:
-                //todo DC
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                //todo trip_dc
+                textResource = R.string.slide_20_spring_break_family;
+                imageResource = R.drawable.trip_dc;
+                tooSkewed = true;
                 break;
             case 20:
                 //todo NYC
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_21_first_nyc;
+                imageResource = R.drawable.trip_nyc_2016;
+                tooSkewed = true;
                 break;
             case 21:
                 textResource = R.string.slide_22_portland_move;
@@ -266,6 +273,13 @@ public class SlideShowFragment extends Fragment {
 //        imgView.setImageResource(imageResource);
 
         Glide.with(getContext()).load(imageResource).into(imgView);
+
+        if(tooSkewed){
+            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) imgView.getLayoutParams();
+            params.addRule(RelativeLayout.ABOVE,R.id.bottomText);
+            imgView.setLayoutParams(params);
+        }
+
 
         return v;
     }
