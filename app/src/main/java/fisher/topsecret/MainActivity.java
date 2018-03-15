@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
         vp.setAdapter(adapter);
-//        vp.setCurrentItem(3,true);//set to the last element
+        vp.setCurrentItem(23,true);//set to the last element
 
     }
 

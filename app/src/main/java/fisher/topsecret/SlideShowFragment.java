@@ -37,6 +37,7 @@ public class SlideShowFragment extends Fragment {
         int textResource;
         int imageResource;
         boolean tooSkewed = false;
+        boolean superSkewed = false;
         switch (id) {
             //todo make an intro page says something like swipe right to start
             case 0:
@@ -112,7 +113,7 @@ public class SlideShowFragment extends Fragment {
             case 16: //todo super skeewed
                 textResource = R.string.slide_17_graduation;
                 imageResource = R.drawable.jenna_grad_old;
-                tooSkewed = true;
+                superSkewed = true;
                 break;
             case 17:
                 //todo love you
@@ -147,32 +148,39 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 23:
                 //todo start of portland collages...maybe a nature  one, a vibe one, a food one (steal online images) and of course Blazers
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.love_portland;
+                imageResource = R.drawable.portland_nature;
+                tooSkewed = true;
+
                 break;
             case 24:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.portland_seasons;
+                imageResource = R.drawable.seasons;
                 break;
             case 25:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_25_blazers;
+                imageResource = R.drawable.blazers;
+                tooSkewed = true;
                 break;
             case 26:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_26_east_winter;
+                imageResource = R.drawable.east_coast_2;
+                tooSkewed = true;
                 break;
             case 27:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_27_east_winter_2;
+                imageResource = R.drawable.nye;
+                tooSkewed = true; //todo maybe minimize the text and not unskew
                 break;
             case 28:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                tooSkewed = true;
+                textResource = R.string.slide_28_vancouver;
+                imageResource = R.drawable.vancouver;
                 break;
             case 29:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                superSkewed = true;
+                textResource = R.string.will;
+                imageResource = R.drawable.will;
                 break;
             case 30:
                 textResource = R.string.filler;
@@ -267,10 +275,11 @@ public class SlideShowFragment extends Fragment {
         View v = inflater.inflate(layoutResource, container, false);
 
         TextView textView = v.findViewById(R.id.textBox);
-        textView.setText(textResource);
+
+        textView.setText(textResource);//or gone instead
+
 
         ImageView imgView = v.findViewById(R.id.imageView);
-//        imgView.setImageResource(imageResource);
 
         Glide.with(getContext()).load(imageResource).into(imgView);
 
@@ -280,6 +289,12 @@ public class SlideShowFragment extends Fragment {
             imgView.setLayoutParams(params);
         }
 
+        if(superSkewed){
+            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) imgView.getLayoutParams();
+            params.addRule(RelativeLayout.ABOVE,R.id.bottomText);
+            imgView.setLayoutParams(params);
+            imgView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        }
 
         return v;
     }
