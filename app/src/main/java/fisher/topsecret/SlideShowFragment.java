@@ -1,6 +1,7 @@
 package fisher.topsecret;
 
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -76,13 +77,14 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 8:
                 //todo smitten, try and get the first photo
-            textResource = R.string.filler;
-            imageResource = R.drawable.placeholder;
+            textResource = R.string.slide_8_smitten;
+            imageResource = R.drawable.smitten;
                 break;
             case 9:
                 textResource = R.string.slide_9_activities; //todo move pictures around as beach picure is blocked
                 imageResource = R.drawable.activities;
                 tooSkewed = true;
+
                 break;
             case 10:
                 textResource = R.string.slide_10_grand_budapest;
@@ -179,88 +181,21 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 29:
                 superSkewed = true;
-                textResource = R.string.will;
-                imageResource = R.drawable.will;
+                textResource = R.string.jenna;
+                imageResource = R.drawable.placeholder;
                 break;
             case 30:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                superSkewed = true;
+                textResource = R.string.blank;
+                imageResource = R.drawable.will;
                 break;
             case 31:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.blank;
+                imageResource = R.drawable.you;
                 break;
             case 32:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 33:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 34:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 35:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 36:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 37:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 38:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 39:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 40:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 41:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 42:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 43:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 44:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 45:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 46:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 47:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 48:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
-                break;
-            case 49:
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.blank;
+                imageResource = R.drawable.lillard_time_2;
                 break;
             default:
                 textResource = R.string.filler;
@@ -277,6 +212,9 @@ public class SlideShowFragment extends Fragment {
         TextView textView = v.findViewById(R.id.textBox);
 
         textView.setText(textResource);//or gone instead
+
+            Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/SpecialElite-Regular.ttf");
+            textView.setTypeface(font);
 
 
         ImageView imgView = v.findViewById(R.id.imageView);
