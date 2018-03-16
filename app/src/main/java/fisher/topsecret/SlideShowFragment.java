@@ -127,7 +127,8 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 18:
                 textResource = R.string.slide_19_sb_life;
-                imageResource = R.drawable.sb_collage;
+//                imageResource = R.drawable.sb_collage;
+                imageResource = R.drawable.sb_collage_2;
                 tooSkewed = true;
                 break;
             case 19:
@@ -198,7 +199,7 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 32:
                 textResource = R.string.blank;
-                imageResource = R.drawable.lillard_time_2;
+                imageResource = R.drawable.marry_time;
                 break;
             default:
                 textResource = R.string.filler;
