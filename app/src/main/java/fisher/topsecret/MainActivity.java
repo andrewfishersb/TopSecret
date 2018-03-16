@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
         vp.setAdapter(adapter);
-        vp.setCurrentItem(0,true);//set to the last element
+        vp.setCurrentItem(34,true);//set to the last element
 
     }
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 51;//total number
+            return 34;//total number
         }
     }
 }
