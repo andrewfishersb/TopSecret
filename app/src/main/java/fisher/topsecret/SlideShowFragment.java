@@ -34,14 +34,16 @@ public class SlideShowFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         int id = getArguments().getInt("page_id");
-        int layoutResource;
         int textResource;
         int imageResource;
         boolean tooSkewed = false;
         boolean superSkewed = false;
+        int layoutResource = R.layout.layout_default;
+
         switch (id) {
             //todo make an intro page says something like swipe right to start
             case 0:
+                layoutResource = R.layout.layout_intro_slide;
                 textResource = R.string.filler;
                 imageResource = R.drawable.placeholder;
                 break;
@@ -55,13 +57,14 @@ public class SlideShowFragment extends Fragment {
                 tooSkewed = true;
                 break;
             case 3:
+                tooSkewed = true;
                 textResource = R.string.slide_3_opening_line; //todo shorten and may tooSkewed = true;
                 imageResource = R.drawable.tinder;
                 break;
             case 4:
                 textResource = R.string.slide_4_moore_mesa;
                 imageResource = R.drawable.moore_mesa;
-                        break;
+                break;
             case 5:
                 tooSkewed = true;
                 textResource = R.string.slide_5_christmas_break;
@@ -77,8 +80,8 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 8:
                 //todo smitten, try and get the first photo
-            textResource = R.string.slide_8_smitten;
-            imageResource = R.drawable.smitten;
+                textResource = R.string.slide_8_smitten;
+                imageResource = R.drawable.smitten;
                 break;
             case 9:
                 textResource = R.string.slide_9_activities; //todo move pictures around as beach picure is blocked
@@ -205,36 +208,53 @@ public class SlideShowFragment extends Fragment {
 
 //        https://stackoverflow.com/questions/3647993/android-bitmaps-loaded-from-gallery-are-rotated-in-imageview     if images rotated
 
-        layoutResource = R.layout.layout_default;
 
         View v = inflater.inflate(layoutResource, container, false);
 
-        TextView textView = v.findViewById(R.id.textBox);
+        if(layoutResource == R.layout.layout_default){
+            TextView textView = v.findViewById(R.id.textBox);
 
-        textView.setText(textResource);//or gone instead
+            textView.setText(textResource);//or gone instead
 
-            Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/SpecialElite-Regular.ttf");
-            textView.setTypeface(font);
+//            Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/SpecialElite-Regular.ttf");
+//            textView.setTypeface(font);
+            changeFont(textView);
 
+            ImageView imgView = v.findViewById(R.id.imageView);
 
-        ImageView imgView = v.findViewById(R.id.imageView);
+            Glide.with(getContext()).load(imageResource).into(imgView);
 
-        Glide.with(getContext()).load(imageResource).into(imgView);
+            if (tooSkewed) {
+                RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) imgView.getLayoutParams();
+                params.addRule(RelativeLayout.ABOVE, R.id.bottomText);
+                imgView.setLayoutParams(params);
+            }
 
-        if(tooSkewed){
-            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) imgView.getLayoutParams();
-            params.addRule(RelativeLayout.ABOVE,R.id.bottomText);
-            imgView.setLayoutParams(params);
+            if (superSkewed) {
+                RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) imgView.getLayoutParams();
+                params.addRule(RelativeLayout.ABOVE, R.id.bottomText);
+                imgView.setLayoutParams(params);
+                imgView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            }
+        }else{
+            TextView txtSwipe = v.findViewById(R.id.swipe);
+            TextView txtRight = v.findViewById(R.id.right);
+            TextView txtTo = v.findViewById(R.id.to);
+            TextView txtContinue= v.findViewById(R.id.continueString);
+
+            changeFont(txtSwipe);
+            changeFont(txtRight);
+            changeFont(txtTo);
+            changeFont(txtContinue);
         }
 
-        if(superSkewed){
-            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) imgView.getLayoutParams();
-            params.addRule(RelativeLayout.ABOVE,R.id.bottomText);
-            imgView.setLayoutParams(params);
-            imgView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        }
 
         return v;
+    }
+
+    public void changeFont(TextView textView){
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/SpecialElite-Regular.ttf");
+        textView.setTypeface(font);
     }
 
 }
