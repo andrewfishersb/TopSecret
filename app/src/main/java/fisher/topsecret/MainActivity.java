@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
         PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
         vp.setAdapter(adapter);
-        vp.setCurrentItem(34,true);//set to the last element
+        vp.setCurrentItem(0, true);//set to the last element
 
     }
 
-    private static class PagerAdapter extends FragmentPagerAdapter{
+    private static class PagerAdapter extends FragmentPagerAdapter {
 
         public PagerAdapter(FragmentManager fm) {
             super(fm);
@@ -38,4 +38,6 @@ public class MainActivity extends AppCompatActivity {
             return 34;//total number
         }
     }
+
+
 }

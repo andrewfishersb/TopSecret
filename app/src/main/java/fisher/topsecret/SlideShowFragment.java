@@ -122,8 +122,8 @@ public class SlideShowFragment extends Fragment {
                 break;
             case 16:
                 //todo love you
-                textResource = R.string.filler;
-                imageResource = R.drawable.placeholder;
+                textResource = R.string.slide_18_love_you;
+                imageResource = R.drawable.i_love_you;
                 break;
             case 15:
                 textResource = R.string.slide_19_sb_life;
@@ -178,8 +178,9 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.vancouver;
                 break;
             case 5:
+                tooSkewed = true;
                 textResource = R.string.hawaii;
-                imageResource = R.drawable.placeholder;
+                imageResource = R.drawable.kenny_hawaii;
                 break;
             case 4:
                 textResource = R.string.question;
