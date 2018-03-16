@@ -128,7 +128,7 @@ public class SlideShowFragment extends Fragment {
             case 15:
                 textResource = R.string.slide_19_sb_life;
 //                imageResource = R.drawable.sb_collage;
-                imageResource = R.drawable.sb_collage_2;
+                imageResource = R.drawable.sb_collage;
                 tooSkewed = true;
                 break;
             case 14:
@@ -144,8 +144,9 @@ public class SlideShowFragment extends Fragment {
                 tooSkewed = true;
                 break;
             case 12:
+                tooSkewed = true;
                 textResource = R.string.slide_22_portland_move;
-                imageResource = R.drawable.apartment;//todo maybe a portland collage, her building, bridges, salt n straw or city scape
+                imageResource = R.drawable.portland_collage;//todo maybe a portland collage, her building, bridges, salt n straw or city scape
                 break;
             case 11:
                 //todo start of portland collages...maybe a nature  one, a vibe one, a food one (steal online images) and of course Blazers
@@ -183,13 +184,14 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.kenny_hawaii;
                 break;
             case 4:
+                tooSkewed = true;
                 textResource = R.string.question;
-                imageResource = R.drawable.placeholder;
+                imageResource = R.drawable.question;
                 break;
             case 3:
                 superSkewed = true;
                 textResource = R.string.jenna;
-                imageResource = R.drawable.placeholder;
+                imageResource = R.drawable.jenna_bday_24;
                 break;
             case 2:
                 superSkewed = true;
