@@ -1,26 +1,27 @@
 <resources>
     <string name="app_name">TopSecret</string>
-<string name="filler">Filler Text</string>
-    <string name="slide_1_tinder">Once upon a time there was a guy named Andrew who was browsing Tinder…</string>
-    <string name="slide_2_tinder">he saw the most beautiful girl on Tinder and immediately swiped right.</string>
-    <string name="slide_3_opening_line">The girl Jenna thought Andrews opening line was just going to be another dick joke, but instead it was the start of something beautiful…</string>
-    <string name="slide_4_moore_mesa">On December 21st 2014 they decided to meet in person and take a walk to Moore Mesa, where they bonded over their crazy families while watching the sunset.</string>
-    <string name="slide_5_christmas_break">They both left town during Christmas break but would constantly text and share photos</string>
+
+    <string name="andrew_intro">Once upon a time there was a man named Andrew who was browsing Tinder…</string>
+    <string name="slide_2_tinder">when he saw the most beautiful girl, whose name was Jenna, and immediately swiped right.</string>
+    <string name="slide_3_opening_line">Jenna thought Andrew\'s opening was going to be a dick joke, but instead it was the start of a beautiful relationship…</string>
+    <string name="slide_4_moore_mesa">On December 21st 2014 they decided to meet in person and take a walk around Moore Mesa, where they bonded over their crazy families and watched the sunset.</string>
+    <string name="slide_5_christmas_break">They went their separate ways over Christmas break but they were constantly texting and sharing photos.</string>
     <string name="slide_6_jan_3rd">On January 3rd 2015, they took a moonlit walk along the beach, where they kissed for the first time. Although the beach was cold they stayed out until 4 am.</string>
-    <string name="slide_7_gone_girl">For their first public date they went to see Gone Girl… big mistake.</string>
-    <string name="slide_8_smitten">Soon after they became smitten and tried to spend as much time together as possible and partook in activities such as… </string>
+    <string name="slide_7_gone_girl">For their first public date they went to see Gone Girl. Surprisingly, Andrew did not runaway (jk)</string>
+    <string name="slide_8_smitten">Soon after they became smitten with each other and would spend most of their spare time together. In their spare time they partook in activities such as… </string>
     <string name="slide_9_activities">Bowling, eating, watching soccer, going to the beach and… </string>
 
     <string name="slide_10_grand_budapest">Watching The Grand Budapest Hotel. ;) </string>
-    <string name="slide_11_pre_ankle">Things were going swimmingly until Andrew…</string>
-    <string name="slide_13_broken_ankle">broke his ankle and would needed surgery.</string>
-    <string name="slide_14_through_sickness">Instead of saying peace out, Jenna decided to be an amazing girlfriend and stick by Andrew’s side. She would come over as soon as work and school were done to help nurse him back to health.</string>
+    <string name="slide_11_pre_ankle">Things were going swimmingly until, Andrew…</string>
+    <string name="slide_13_broken_ankle">broke his ankle and would need surgery.</string>
+    <string name="slide_14_through_sickness">Instead of saying peace out, Jenna, being an amazing girlfriend stuck by Andrew’s side. She would come over immediately after work and school to help nurse him back to health.</string>
     <string name="slide_15_wake_up">She slept over every night, and the best part was in the middle of the night Andrew would wake her up for a quick kiss before letting her drift back to sleep.</string>
-    <string name="slide_16_mormon_and_meet">Life was easier once Andrew transitioned to a scooter and crutches, they even were able to see book of Mormon, but meeting her family was a struggle with Zeus and the tri level house</string>
-    <string name="slide_17_graduation">Jenna graduated college, and she moved in with Andrew, partially out of love, and being screwed over by a job</string>
-    <string name="slide_18_love_you">At Jenna\'s Graduation party in Sac, Andrew escaped the crowd to the bedroom where he wrote a simple program, to tell Jenna that he loves her.</string>
-    <string name="slide_19_sb_life">Life strolled blissfully along, as they enjoyed their life together. </string>
+    <string name="slide_16_mormon_and_meet">Life was easier once Andrew transitioned to a scooter and crutches. They even were able to see book of Mormon, and meet Jenna\'s family, which was a struggle because of Zeus\' tail and their tri-level house</string>
+    <string name="slide_17_graduation">Jenna graduated college, and she moved in with Andrew, as they practically already lived together, and she screwed out of a job</string>
+    <string name="slide_18_love_you">At Jenna\'s Graduation party in Sac, Andrew escaped the crowd to go to the bedroom where he wrote a simple program, to tell Jenna that he loves her for the first time.</string>
+    <string name="slide_19_sb_life">Life strolled blissfully along, as the happy couple enjoyed their life together. </string>
 
+    <!--TODO Start proofing here-->
     <string name="slide_20_spring_break_family">Spring Break 2016, they traveled to D.C. and Albany to see family…</string>
     <string name="slide_21_first_nyc">and to NYC where they met up with Alex</string>
     <string name="slide_22_portland_move">In July of 2017, Andrew and Jenna took a plunge and moved to Portland so Andrew could jump start his career.</string>

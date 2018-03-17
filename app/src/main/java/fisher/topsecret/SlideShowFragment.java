@@ -44,11 +44,11 @@ public class SlideShowFragment extends Fragment {
             //todo make an intro page says something like swipe right to start
             case 33:
                 layoutResource = R.layout.layout_intro_slide;
-                textResource = R.string.filler;
+                textResource = R.string.blank;
                 imageResource = R.drawable.placeholder;
                 break;
             case 32:
-                textResource = R.string.slide_1_tinder;
+                textResource = R.string.andrew_intro;
                 imageResource = R.drawable.intro;
                 break;
             case 31:
@@ -209,7 +209,7 @@ public class SlideShowFragment extends Fragment {
                 imageResource = R.drawable.marry_time;
                 break;
             default:
-                textResource = R.string.filler;
+                textResource = R.string.blank;
                 imageResource = R.drawable.placeholder;
                 break;
         }
